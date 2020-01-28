@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Nova senha</title>
+    <center>
+    <h1>Nova Senha</h1>
+  </head>
+  <b<body>
+    <form action="new_password" method="post">
+    {%csrf_token%}
+    <br>
+    <input type="text" name="usuario_1" placeholder="nome de usuário"><br>
+    <br>
+    <input type="password" name="senha3" placeholder="Nova senha"><br>
+    <br>
+    <input type="password" name="senha4" placeholder="Digite a senha novamente"><br>
+    <br>
+    <input type="submit" value="Submeter" >
+    </form>
+
+    <div>
+      {%for message in messages%}
+      <h3>{{message}}</h3>
+      {%endfor%}
+    </div>
+  </body>
+</center>
+</html>

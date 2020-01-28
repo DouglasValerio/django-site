@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{en}">
+<head>
+  {% if user.is_authenticated %}
+  <h1>Olá,  {{ user.get_username }} <h1>
+    <h2>Data de registro: {{ user.date_joined }} </h2>
+  <h4>
+  <li><a href="registro/logout">Logout</a><br>
+    <br>
+  </li><li><a href="perfil">Dashboard</a></li>
+</h4>
+  {%else%}
+<!--  <h2>
+<li><a href="registro">Registro</a></li></h2>
+<br>
+ <li><a href="login">Login</a></li></h2> -->
+
+
+</head>
+<br>
+<br>
+<center>
+  <body>
+    <form action="adesao" method="post">
+        {%csrf_token%}
+    <br>
+    <input type="text" name="CNPJ" placeholder="Digite o CNPJ da loja"><br>
+    <br>
+    <input type="text" name="razao" placeholder="Razão Social"><br>
+    <br>
+    <input type="submit" value="Cadastrar" >
+    </form>
+    <br>
+
+    Já possui cadastro? Clique aqui <li><a href='login'>Login</a>  </li>
+{%endif%}
+</body>
+<div>
+  {%for message in messages%}
+  <h3>{{message}}</h3>
+  {%endfor%}
+</div>
+</center>
+</html>

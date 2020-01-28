@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.bokeh.org/bokeh/release/bokeh-1.4.0.min.css"/>
+   <link rel="stylesheet" type="text/css" href="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-1.4.0.min.css"/>
+   <link rel="stylesheet" type="text/css" href="https://cdn.bokeh.org/bokeh/release/bokeh-tables-1.4.0.min.css"/>
+
+
+  </head>
+  <body>
+    {% if user.is_authenticated %}
+      <li><a href="/">Página Inicial</a></li>
+  <center>  <h2>Dashboard {{ user.get_username }} <h2></center>
+        {{div| safe}}
+  </body>
+  <script text="type/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-1.4.0.min.js"></script>
+  <script text="type/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-1.4.0.min.js"></script>
+  <script text="type/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-1.4.0.min.js"></script>
+     {{script | safe}}
+     {%else%}
+     <h3>Faça seu login aqui</h3> <li><a href="login">Login</a></li>
+{%endif%}
+</html>

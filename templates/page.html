@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Termo de Adesão</title>
+    <center>
+    <h1>Termo de Adesão</h1>
+  </head>
+  <b<body>
+    <div margin:auto>
+    <form action="registro" method="post">
+    {%csrf_token%}
+    <br>
+    <input type="text" name="nome" placeholder="Nome Fantasia da Loja"><br>
+    <br>
+    <input type="text" name="last_name" placeholder='Nome do responsável'><br>
+    <br>
+    <input type="text" name="user" placeholder="nome de usuário"><br>
+    <br>
+    <input type="email" name="e-mail" placeholder="E-mail de contato"><br>
+    <br>
+    <input type="password" name="senha1" placeholder="Senha"><br>
+    <br>
+    <input type="password" name="senha2" placeholder="Confirme sua senha"><br>
+    <br>
+
+    <div style="height:400px;width:1000px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
+    Regulamento-aceitar Regulamento-aceitarRegulamento-aceitarRegulamento-aceitar
+    Regulamento-aceitarRegulamento-aceitarRegulamento-aceitarRegulamento-aceitar
+    Regulamento-aceitarRegulamento-aceitarRegulamento-aceitarRegulamento-aceitarRegulamentoRegulamento-aceitar Regulamento-aceitar Regulamento-aceitar
+    Regulamento-aceitarRegulamento-aceitar<br>
+    Regulamento-aceitarRegulamento-aceitarRegulamento-aceitar
+    Regulamento-aceitarRegulamento-aceitarRegulamento-aceitarRegulamento-aceitar
+    Regulamento-aceitarRegulamento-aceitarRegulamento-aceitarRegulamento-aceitarRegulamentoRegulamento-aceitar Regulamento-aceitar Regulamento-aceitar
+    Regulamento-aceitarRegulamento-aceitar
+    Regulamento-aceitar Regulamento-aceitarRegulamento-aceitarRegulamento-aceitar
+    Regulamento-aceitarRegulamento-aceitarRegulamento-aceitarRegulamento-aceitar
+    Regulamento-aceitarRegulamento-aceitarRegulamento-aceitarRegulamento-aceitarRegulamentoRegulamento-aceitar Regulamento-aceitar Regulamento-aceitar
+    Regulamento-aceitarRegulamento-aceitar<br>
+    Regulamento-aceitarRegulamento-aceitarRegulamento-aceitar
+    Regulamento-aceitarRegulamento-aceitarRegulamento-aceitarRegulamento-aceitar
+    Regulamento-aceitarRegulamento-aceitarRegulamento-aceitarRegulamento-aceitarRegulamentoRegulamento-aceitar Regulamento-aceitar Regulamento-aceitar
+    Regulamento-aceitarRegulamento-aceitar
+    Regulamento-aceitar Regulamento-aceitarRegulamento-aceitarRegulamento-aceitar
+    Regulamento-aceitarRegulamento-aceitarRegulamento-aceitarRegulamento-aceitar
+    Regulamento-aceitarRegulamento-aceitarRegulamento-aceitarRegulamento-aceitarRegulamentoRegulamento-aceitar Regulamento-aceitar Regulamento-aceitar
+    Regulamento-aceitarRegulamento-aceitar<br>
+    Regulamento-aceitarRegulamento-aceitarRegulamento-aceitar
+    Regulamento-aceitarRegulamento-aceitarRegulamento-aceitarRegulamento-aceitar
+    Regulamento-aceitarRegulamento-aceitarRegulamento-aceitarRegulamento-aceitarRegulamentoRegulamento-aceitar Regulamento-aceitar Regulamento-aceitar
+    Regulamento-aceitarRegulamento-aceitar
+    Regulamento-aceitar Regulamento-aceitarRegulamento-aceitarRegulamento-aceitar
+    Regulamento-aceitarRegulamento-aceitarRegulamento-aceitarRegulamento-aceitar
+    Regulamento-aceitarRegulamento-aceitarRegulamento-aceitarRegulamento-aceitarRegulamentoRegulamento-aceitar Regulamento-aceitar Regulamento-aceitar
+    Regulamento-aceitarRegulamento-aceitar<br>
+    Regulamento-aceitarRegulamento-aceitarRegulamento-aceitar
+    Regulamento-aceitarRegulamento-aceitarRegulamento-aceitarRegulamento-aceitar
+    Regulamento-aceitarRegulamento-aceitarRegulamento-aceitarRegulamento-aceitarRegulamentoRegulamento-aceitar Regulamento-aceitar Regulamento-aceitar
+    Regulamento-aceitarRegulamento-aceitar
+    Regulamento-aceitar Regulamento-aceitarRegulamento-aceitarRegulamento-aceitar
+    Regulamento-aceitarRegulamento-aceitarRegulamento-aceitarRegulamento-aceitar
+    Regulamento-aceitarRegulamento-aceitarRegulamento-aceitarRegulamento-aceitarRegulamentoRegulamento-aceitar Regulamento-aceitar Regulamento-aceitar
+    Regulamento-aceitarRegulamento-aceitar<br>
+    Regulamento-aceitarRegulamento-aceitarRegulamento-aceitar
+    Regulamento-aceitarRegulamento-aceitarRegulamento-aceitarRegulamento-aceitar
+    Regulamento-aceitarRegulamento-aceitarRegulamento-aceitarRegulamento-aceitarRegulamentoRegulamento-aceitar Regulamento-aceitar Regulamento-aceitar
+    Regulamento-aceitarRegulamento-aceitar
+    Regulamento-aceitar Regulamento-aceitarRegulamento-aceitarRegulamento-aceitar
+    Regulamento-aceitarRegulamento-aceitarRegulamento-aceitarRegulamento-aceitar
+    Regulamento-aceitarRegulamento-aceitarRegulamento-aceitarRegulamento-aceitarRegulamentoRegulamento-aceitar Regulamento-aceitar Regulamento-aceitar
+    Regulamento-aceitarRegulamento-aceitar<br>
+    Regulamento-aceitarRegulamento-aceitarRegulamento-aceitar
+    Regulamento-aceitarRegulamento-aceitarRegulamento-aceitarRegulamento-aceitar
+    Regulamento-aceitarRegulamento-aceitarRegulamento-aceitarRegulamento-aceitarRegulamentoRegulamento-aceitar Regulamento-aceitar Regulamento-aceitar
+    Regulamento-aceitarRegulamento-aceitar
+
+    </div>
+    <br>
+    <h4>Ao finalizar o cadastro você estará aceitando automaticamente as condições acima</h4>
+    <br>
+    <input type="submit" name="botao_registro" label="Registrar" value="Finalizar Cadastro">
+    <br>
+    </form>
+    <div>
+      {%for message in messages%}
+      <h3>{{message}}</h3>
+      {%endfor%}
+    </div>
+
+
+    </div>
+  </body>
+</center>
+</html>

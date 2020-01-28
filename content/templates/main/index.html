@@ -1,0 +1,29 @@
+{% extends 'layouts/default/page.html' %}
+
+{% load i18n %}
+
+{% block content %}
+
+    {% if request.user.is_authenticated %}
+
+        {% trans 'Bem vindo ' %} <b>{{ request.user.username }}</b>.
+
+<body>
+  {{div| safe}}
+</body>
+<script text="type/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-1.4.0.min.js"></script>
+<script text="type/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-1.4.0.min.js"></script>
+<script text="type/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-1.4.0.min.js"></script>
+   {{script | safe}}
+
+
+
+
+
+    {% else %}
+
+        {% trans 'Bem vindo.' %}
+
+    {% endif %}
+
+{% endblock %}
